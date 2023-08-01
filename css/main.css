@@ -1,27 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  margin: 0;
+}
+
 :root {
   --primary-color: rgb(21, 55, 43);
 }
 
-.image-overlay {
-  background-color: var(--primary-color);
-  height: 10em;
+.navbar {
+  background-color: grey;
 }
-.image-overlay img, .image-overlay .headline {
-  margin-left: 10%;
-  height: 10em;
-  width: 80%;
-  color: white;
+.navbar .container {
+  height: 50px;
+  margin: 0;
 }
-.image-overlay .headline {
+.navbar .container .primary-nav {
+  justify-content: flex-end;
+  font-weight: bold;
   text-transform: uppercase;
-  background-color: var(--primary-color);
-  height: 3em;
-}
-.image-overlay .row {
+  margin-right: 7em;
+  margin-bottom: 0;
+  list-style-type: none;
   display: flex;
 }
-.image-overlay .column {
-  flex: 50%;
+.navbar .container .primary-nav a {
+  text-decoration: none;
+  color: white;
+  margin: 1em;
+  padding: 0 0.5em 0 0;
+  border-right: 2px solid white;
+}
+.navbar .container .primary-nav .number {
+  padding-top: 3.5em;
+  background-color: rgb(255, 92, 92);
+}
+.navbar .container .primary-nav li {
+  padding-top: 1em;
+}
+
+.mid-container {
+  border: 2px solid black;
+  margin-left: 5em;
+  margin-right: 7em;
+}
+.mid-container .logo-container {
+  border: 2px solid red;
+  width: 10em;
+  font-size: 1em;
+  display: flex;
+  margin-bottom: 0;
+  padding-top: 3em;
+  background-color: green;
+  color: white;
+}
+.mid-container .tab-container {
+  border: 2px solid green;
+  margin-left: 10.4em;
+  margin-top: -3em;
+}
+.mid-container a {
+  text-decoration: none;
+}
+.mid-container li {
+  margin: 0.5em;
+  background-color: burlywood;
+}
+.mid-container .tab-container-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+.mid-container .architect {
+  background-color: rgb(255, 92, 92);
+}
+.mid-container .banner-container {
+  border: 2px solid yellow;
+  position: relative;
+}
+.mid-container .banner-container img {
+  height: 15em;
   width: 100%;
-  padding: 5px;
+}
+.mid-container .headline {
+  border: 2px solid red;
 }/*# sourceMappingURL=main.css.map */

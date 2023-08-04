@@ -10,6 +10,24 @@
 </head>
 
 <body>
+    <div class="topnav" id="myTopnav">
+        <a href="#"></a>
+        <a href="#news">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">Faqs</a>
+        <a href="#" class="jobs">jobs</a>
+        <a class="number">(886)943-40</a>
+        <a class="buttons">Industries</a>
+        <a class="buttons">Products</a>
+        <a class="buttons">Completed Projects</a>
+        <a class="buttons">Process</a>
+        <a class="buttons">Blog</a>
+        <a class="buttons">Free Resources</a>
+        <a id="architect" type="submit">Architect Solutions</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
     <div class="navbar">
         <div class="container">
             <nav>
@@ -31,9 +49,10 @@
         </div>
 
 
+
         <div class="tab-container">
             <ul class="tab-container-list">
-                <button class="buttons">Industries</button>
+                <button class="buttons ">Industry</button>
                 <button class="buttons">Products</button>
                 <button class="buttons">Completed Projects</button>
                 <button class="buttons">Process</button>
@@ -69,8 +88,13 @@
                                 doloremque porro, neque labore. Voluptate quisquam molestias obcaecati? Lorem ipsum
                                 dolor sit amet consectetur adipisicing elit. Eum corrupti magnam laborum aperiam iure
                                 sunt recusandae, totam doloremque culpa iste praesentium quia exercitationem omnis!
-                                Repellendus accusantium iure autem doloribus quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sapiente? Adipisci officiis impedit quas doloribus perferendis reprehenderit provident architecto recusandae alias. Magni iure, illum earum voluptatibus provident accusantium consectetur necessitatibus?</p>
-                            <button type="submit"><p>Read More</p><img id="arrow" src="/template1assigment/assets/right-arrow.png" /></button>
+                                Repellendus accusantium iure autem doloribus quisquam. Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Quae, sapiente? Adipisci officiis impedit quas doloribus
+                                perferendis reprehenderit provident architecto recusandae alias. Magni iure, illum earum
+                                voluptatibus provident accusantium consectetur necessitatibus?</p>
+                            <button type="submit">
+                                <p>Read More</p><img id="arrow" src="/template1assigment/assets/right-arrow.png" />
+                            </button>
                         </div>
                         <div class="imgdiv">
                             <img src="https://www.tssbulletproof.com/hubfs/website_assets/pages/Product/accessories/tray-recessed.webp"
@@ -125,13 +149,16 @@
                                     dolore nostrum nobis, magnam atque reprehenderit fuga!
                                 </div>
                                 <div class="btn">
-                                    <button class="buton"><p>Visit Gallary</p><img id="arrow" src="/template1assigment/assets/right-arrow.png" /></button>
+                                    <button class="buton">
+                                        <p>Visit Gallary</p><img id="arrow"
+                                            src="/template1assigment/assets/right-arrow.png" />
+                                    </button>
                                 </div>
                             </div>
 
                             <div class="desc-inner-container">
                                 <div class="view-projects">
-                                    View Completed Projects
+                                    View Our Download Center
                                 </div>
                                 <div class="desc">
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint distinctio aspernatur
@@ -140,13 +167,16 @@
                                     dolore nostrum nobis, magnam atque reprehenderit fuga!
                                 </div>
                                 <div class="btn">
-                                    <button class="buton"><p>Free Resources</p><img id="arrow" src="/template1assigment/assets/right-arrow.png" /></button>
+                                    <button class="buton">
+                                        <p>Free Resources</p><img id="arrow"
+                                            src="/template1assigment/assets/right-arrow.png" />
+                                    </button>
                                 </div>
                             </div>
 
                             <div class="desc-inner-container">
                                 <div class="view-projects">
-                                    View Completed Projects
+                                    View Our Products and Services
                                 </div>
                                 <div class="desc">
                                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint distinctio aspernatur
@@ -155,7 +185,10 @@
                                     dolore nostrum nobis, magnam atque reprehenderit fuga!
                                 </div>
                                 <div class="btn">
-                                    <button class="buton"><p>View Products</p><img id="arrow" src="/template1assigment/assets/right-arrow.png" /></button>
+                                    <button class="buton">
+                                        <p>View Products</p><img id="arrow"
+                                            src="/template1assigment/assets/right-arrow.png" />
+                                    </button>
                                 </div>
                             </div>
 
@@ -191,7 +224,7 @@
     </div>
 
     <div class="footer-container">
-        <div class="footer-upper-container">
+        <div class="footer-upper-container" id="footer-upper-id">
             <div class="upper-left">
                 <div class="left-first">
                     <ul class="left-content">
@@ -243,11 +276,21 @@
         </div>
 
         <div class="footer-lowest-container">
-            <p class="footer-low"> Security Solutions, Inc &#169; 2012 170 National Park Drive fowferville,MI 45836 | 23561 Ridge Routs
-            Sta "O" Laguna Hills,CA 92553</p>
+            <p class="footer-low"> Security Solutions, Inc &#169; 2012 170 National Park Drive fowferville,MI 45836 |
+                23561 Ridge Routs
+                Sta "O" Laguna Hills,CA 92553</p>
         </div>
     </div>
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
